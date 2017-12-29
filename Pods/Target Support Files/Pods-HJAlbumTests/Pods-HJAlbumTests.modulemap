@@ -1,0 +1,6 @@
+framework module Pods_HJAlbumTests {
+  umbrella header "Pods-HJAlbumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721F746171A2B95D5E03C13A /* Pods_HJAlbumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD165B8BDD9322934D5274B /* Pods_HJAlbumTests.framework */; };
 		7993688B1FF389A400B26583 /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993688A1FF389A400B26583 /* GlobalDefinition.swift */; };
 		7993688D1FF38A7500B26583 /* HJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993688C1FF38A7500B26583 /* HJNavigationController.swift */; };
 		799368901FF3923700B26583 /* TabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7993688F1FF3923700B26583 /* TabBar.bundle */; };
+		799368951FF3CAB500B26583 /* HJMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799368941FF3CAB500B26583 /* HJMomentTableViewCell.swift */; };
+		799368981FF49BBE00B26583 /* HJMomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799368971FF49BBE00B26583 /* HJMomentModel.swift */; };
+		7993689B1FF4E60900B26583 /* HJTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993689A1FF4E60900B26583 /* HJTools.swift */; };
 		79A6D6721FF3738A00058670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6D6711FF3738A00058670 /* AppDelegate.swift */; };
 		79A6D6791FF3738A00058670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A6D6781FF3738A00058670 /* Assets.xcassets */; };
 		79A6D67C1FF3738A00058670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A6D67A1FF3738A00058670 /* LaunchScreen.storyboard */; };
@@ -19,6 +23,8 @@
 		79A6D6AA1FF3793E00058670 /* HJMemeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6D6A91FF3793E00058670 /* HJMemeryViewController.swift */; };
 		79A6D6AC1FF3795800058670 /* HJClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6D6AB1FF3795800058670 /* HJClassificationViewController.swift */; };
 		79A6D6B11FF379FC00058670 /* HJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6D6B01FF379FC00058670 /* HJTabBarController.swift */; };
+		87CDCD09D6C7444D87FDCA23 /* Pods_HJAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBA417987BC56D47828F7D4 /* Pods_HJAlbum.framework */; };
+		D276202311C37823BB174FB2 /* Pods_HJAlbumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431DCFF89A61664A22A4C8EF /* Pods_HJAlbumUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FBA417987BC56D47828F7D4 /* Pods_HJAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431DCFF89A61664A22A4C8EF /* Pods_HJAlbumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJAlbumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		589D7079A44F2B8A90F89F1C /* Pods-HJAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbum/Pods-HJAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		5E269504C43E15833495EAB2 /* Pods-HJAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbum/Pods-HJAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 		7993688A1FF389A400B26583 /* GlobalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
 		7993688C1FF38A7500B26583 /* HJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJNavigationController.swift; sourceTree = "<group>"; };
 		7993688F1FF3923700B26583 /* TabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TabBar.bundle; sourceTree = "<group>"; };
+		799368941FF3CAB500B26583 /* HJMomentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMomentTableViewCell.swift; sourceTree = "<group>"; };
+		799368971FF49BBE00B26583 /* HJMomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMomentModel.swift; sourceTree = "<group>"; };
+		7993689A1FF4E60900B26583 /* HJTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJTools.swift; sourceTree = "<group>"; };
 		79A6D66E1FF3738A00058670 /* HJAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A6D6711FF3738A00058670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A6D6781FF3738A00058670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +70,11 @@
 		79A6D6A91FF3793E00058670 /* HJMemeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMemeryViewController.swift; sourceTree = "<group>"; };
 		79A6D6AB1FF3795800058670 /* HJClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJClassificationViewController.swift; sourceTree = "<group>"; };
 		79A6D6B01FF379FC00058670 /* HJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJTabBarController.swift; sourceTree = "<group>"; };
+		7CD165B8BDD9322934D5274B /* Pods_HJAlbumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJAlbumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C2E7F225CEF52C919FDB30 /* Pods-HJAlbumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbumUITests/Pods-HJAlbumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD28D8F6D3E594AE340086C /* Pods-HJAlbumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbumUITests/Pods-HJAlbumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA72C136093303BF3381D52 /* Pods-HJAlbumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbumTests/Pods-HJAlbumTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF03DBAA053009EBF0B4C05F /* Pods-HJAlbumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAlbumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJAlbumTests/Pods-HJAlbumTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CDCD09D6C7444D87FDCA23 /* Pods_HJAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721F746171A2B95D5E03C13A /* Pods_HJAlbumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,15 +98,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D276202311C37823BB174FB2 /* Pods_HJAlbumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295424C49144E929A89C392F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E269504C43E15833495EAB2 /* Pods-HJAlbum.debug.xcconfig */,
+				589D7079A44F2B8A90F89F1C /* Pods-HJAlbum.release.xcconfig */,
+				CF03DBAA053009EBF0B4C05F /* Pods-HJAlbumTests.debug.xcconfig */,
+				CAA72C136093303BF3381D52 /* Pods-HJAlbumTests.release.xcconfig */,
+				82C2E7F225CEF52C919FDB30 /* Pods-HJAlbumUITests.debug.xcconfig */,
+				BAD28D8F6D3E594AE340086C /* Pods-HJAlbumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		799368881FF3897B00B26583 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				799368991FF4E5EB00B26583 /* Tools */,
 				799368891FF3898000B26583 /* Common */,
 			);
 			path = Other;
@@ -108,6 +143,30 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		799368931FF3CA9B00B26583 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				799368941FF3CAB500B26583 /* HJMomentTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		799368961FF49AA600B26583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				799368971FF49BBE00B26583 /* HJMomentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799368991FF4E5EB00B26583 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7993689A1FF4E60900B26583 /* HJTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		79A6D6651FF3738A00058670 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +174,8 @@
 				79A6D6851FF3738A00058670 /* HJAlbumTests */,
 				79A6D6901FF3738A00058670 /* HJAlbumUITests */,
 				79A6D66F1FF3738A00058670 /* Products */,
+				295424C49144E929A89C392F /* Pods */,
+				A11597094462288C772840CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +242,8 @@
 		79A6D6A11FF3775500058670 /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				799368961FF49AA600B26583 /* Model */,
+				799368931FF3CA9B00B26583 /* View */,
 				79A6D6A41FF378F900058670 /* Controller */,
 			);
 			path = Moment;
@@ -236,6 +299,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A11597094462288C772840CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA417987BC56D47828F7D4 /* Pods_HJAlbum.framework */,
+				7CD165B8BDD9322934D5274B /* Pods_HJAlbumTests.framework */,
+				431DCFF89A61664A22A4C8EF /* Pods_HJAlbumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79A6D6961FF3738A00058670 /* Build configuration list for PBXNativeTarget "HJAlbum" */;
 			buildPhases = (
+				C1F9E57DC09D2F8D50F0773E /* [CP] Check Pods Manifest.lock */,
 				79A6D66A1FF3738A00058670 /* Sources */,
 				79A6D66B1FF3738A00058670 /* Frameworks */,
 				79A6D66C1FF3738A00058670 /* Resources */,
+				168A608461B854129896A7D1 /* [CP] Embed Pods Frameworks */,
+				D1DABB0583D8A03F7F07F509 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79A6D6991FF3738A00058670 /* Build configuration list for PBXNativeTarget "HJAlbumTests" */;
 			buildPhases = (
+				9216F78A0CA0E4A904FC5D05 /* [CP] Check Pods Manifest.lock */,
 				79A6D67E1FF3738A00058670 /* Sources */,
 				79A6D67F1FF3738A00058670 /* Frameworks */,
 				79A6D6801FF3738A00058670 /* Resources */,
+				3C8B9B196D2073BEC8985C99 /* [CP] Embed Pods Frameworks */,
+				0D2D922441F0C99ACECB4196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79A6D69C1FF3738A00058670 /* Build configuration list for PBXNativeTarget "HJAlbumUITests" */;
 			buildPhases = (
+				5B7663253D7E415E96CB85D3 /* [CP] Check Pods Manifest.lock */,
 				79A6D6891FF3738A00058670 /* Sources */,
 				79A6D68A1FF3738A00058670 /* Frameworks */,
 				79A6D68B1FF3738A00058670 /* Resources */,
+				AC4F46DFB0B805F5DAA568C6 /* [CP] Embed Pods Frameworks */,
+				5AB421E3DAC639C8DA566021 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,6 +448,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2D922441F0C99ACECB4196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbumTests/Pods-HJAlbumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		168A608461B854129896A7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbum/Pods-HJAlbum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbum/Pods-HJAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C8B9B196D2073BEC8985C99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbumTests/Pods-HJAlbumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB421E3DAC639C8DA566021 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbumUITests/Pods-HJAlbumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7663253D7E415E96CB85D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJAlbumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9216F78A0CA0E4A904FC5D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJAlbumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC4F46DFB0B805F5DAA568C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbumUITests/Pods-HJAlbumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F9E57DC09D2F8D50F0773E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1DABB0583D8A03F7F07F509 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAlbum/Pods-HJAlbum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79A6D66A1FF3738A00058670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -374,10 +610,13 @@
 				79A6D6AC1FF3795800058670 /* HJClassificationViewController.swift in Sources */,
 				79A6D6B11FF379FC00058670 /* HJTabBarController.swift in Sources */,
 				79A6D6A81FF3791900058670 /* HJMomentViewController.swift in Sources */,
+				799368951FF3CAB500B26583 /* HJMomentTableViewCell.swift in Sources */,
 				7993688D1FF38A7500B26583 /* HJNavigationController.swift in Sources */,
 				7993688B1FF389A400B26583 /* GlobalDefinition.swift in Sources */,
 				79A6D6721FF3738A00058670 /* AppDelegate.swift in Sources */,
+				799368981FF49BBE00B26583 /* HJMomentModel.swift in Sources */,
 				79A6D6AA1FF3793E00058670 /* HJMemeryViewController.swift in Sources */,
+				7993689B1FF4E60900B26583 /* HJTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +772,7 @@
 		};
 		79A6D6971FF3738A00058670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E269504C43E15833495EAB2 /* Pods-HJAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +789,7 @@
 		};
 		79A6D6981FF3738A00058670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589D7079A44F2B8A90F89F1C /* Pods-HJAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +806,7 @@
 		};
 		79A6D69A1FF3738A00058670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF03DBAA053009EBF0B4C05F /* Pods-HJAlbumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +824,7 @@
 		};
 		79A6D69B1FF3738A00058670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA72C136093303BF3381D52 /* Pods-HJAlbumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,6 +842,7 @@
 		};
 		79A6D69D1FF3738A00058670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C2E7F225CEF52C919FDB30 /* Pods-HJAlbumUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,6 +859,7 @@
 		};
 		79A6D69E1FF3738A00058670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD28D8F6D3E594AE340086C /* Pods-HJAlbumUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

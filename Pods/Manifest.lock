@@ -1,0 +1,18 @@
+PODS:
+  - Kingfisher (4.6.0)
+  - Reveal-SDK (13)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - Reveal-SDK
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Kingfisher: 1ea13a1b18297ae8afa0965e83ecdb68e1b71987
+  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 92a9679b927884d00a2c43131eb6d6fcd0153650
+
+COCOAPODS: 1.3.1

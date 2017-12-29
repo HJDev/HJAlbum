@@ -29,8 +29,21 @@ func HJRGBA(red r: CGFloat, green g: CGFloat, blue b:CGFloat, alpha a:CGFloat) -
 func HJRGB(red r: CGFloat, green g: CGFloat, blue b:CGFloat) -> UIColor {
 	return HJRGBA(red: (r), green: (g), blue: (b), alpha: 1.0)
 }
+/** 获取图片地址 */
 func HJImageSrc(name: String, bundle: String) -> String {
 	var bundleName = bundle + ".bundle/"
 	bundleName.append(name)
 	return bundleName
+}
+/** 获取一个类的类名 */
+func HJClassName(clazz: AnyClass) -> String {
+	return String.init(describing: clazz)
+}
+/** 屏幕宽度 */
+func HJWidth() -> CGFloat {
+	return UIScreen.main.bounds.size.width
+}
+/** 屏幕高度 */
+func HJHeight() -> CGFloat {
+	return UIScreen.main.bounds.size.height
 }
