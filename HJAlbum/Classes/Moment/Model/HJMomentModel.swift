@@ -11,11 +11,16 @@ import UIKit
 class HJMomentModel: NSObject {
 	/** 图片地址 */
 	var imageUrl : String?
+	/** 图片 */
+	var image : UIImage?
 	/** 标题 */
 	var title : String?
 	/** 日期 */
-	var date : CGFloat?
+	var date : Date?
 	
+	override init() {
+		
+	}
 	init(dic : [String : AnyObject]) {
 		super.init()
 		setValuesForKeys(dic)

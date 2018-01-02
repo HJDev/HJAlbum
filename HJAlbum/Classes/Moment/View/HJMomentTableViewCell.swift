@@ -13,11 +13,17 @@ import Kingfisher
 class HJMomentTableViewCell: UITableViewCell {
 
 	var iModel : HJMomentModel?
-	public var model : HJMomentModel {
+	public var model : HJMomentModel? {
 		set {
 			self.iModel = newValue
-			let locationStr = "\(arc4random())"
-			self.locationLabel.text = locationStr
+			self.imageView.image = newValue?.image
+			self.locationLabel.text = newValue?.title
+			let dateFormate : DateFormatter = DateFormatter.init()
+			dateFormate.dateFormat = "yyyy-MM-dd"
+			dateFormate.timeZone = TimeZone.init(identifier: "UTF")
+			dateFormate.locale = Locale.init(identifier: "zh_CN")
+			let dateStr = dateFormate.string(from: (newValue?.date)!)
+			self.dateLabel.text = dateStr
 		}
 		get {
 			return self.model
@@ -36,7 +42,7 @@ class HJMomentTableViewCell: UITableViewCell {
 		imageView.contentMode = .scaleAspectFill
 		imageView.layer.cornerRadius = 5;
 		imageView.clipsToBounds = true
-		imageView.kf.setImage(with: URL.init(string: "http://www.xiansuan.com/uploads/imges/160918/e2xiif5dzjt4124.jpg"))
+//		imageView.kf.setImage(with: URL.init(string: "http://www.xiansuan.com/uploads/imges/160918/e2xiif5dzjt4124.jpg"))
 		return imageView
 	}()
 	private lazy var mContentView : UIView = {
@@ -48,7 +54,7 @@ class HJMomentTableViewCell: UITableViewCell {
 		dateLabel.font = UIFont.systemFont(ofSize: 22)
 		dateLabel.textColor = UIColor.white
 		dateLabel.textAlignment = .center
-		dateLabel.text = "2017-12-27";
+//		dateLabel.text = "2017-12-27";
 		return dateLabel
 	}()
 	private lazy var locationLabel : UILabel = {
@@ -56,7 +62,7 @@ class HJMomentTableViewCell: UITableViewCell {
 		locationLabel.font = UIFont.systemFont(ofSize: 18)
 		locationLabel.textColor = UIColor.white
 		locationLabel.textAlignment = .center
-		locationLabel.text = "上海市杨浦区"
+//		locationLabel.text = "上海市杨浦区"
 		return locationLabel
 	}()
 	
@@ -65,7 +71,7 @@ class HJMomentTableViewCell: UITableViewCell {
 		self.selectionStyle = .none
 		self.setupViews()
 		self.setupConstraints()
-		self.imageView.kf.setImage(with: URL.init(string: "http://www.xiansuan.com/uploads/imges/160918/e2xiif5dzjt4124.jpg"))
+//		self.imageView.kf.setImage(with: URL.init(string: "http://www.xiansuan.com/uploads/imges/160918/e2xiif5dzjt4124.jpg"))
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

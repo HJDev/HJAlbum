@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Photos
+import CoreLocation
 
 class HJMomentViewController: UITableViewController {
 
-	private lazy var dataList : Array<Any> = Array<Any>()
+	private lazy var dataList : PHFetchResult<PHAsset> = PHFetchResult<PHAsset>.init()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,8 @@ class HJMomentViewController: UITableViewController {
 		self.tableView.dataSource = self
 		self.tableView.register(HJMomentTableViewCell.classForCoder(), forCellReuseIdentifier: HJClassName(clazz: HJMomentTableViewCell.classForCoder()))
 		
-		getAllPic()
+		self.dataList = getAllPic()
+		
     }
 	
 	deinit {
@@ -35,18 +38,26 @@ class HJMomentViewController: UITableViewController {
     
 	//MARK: - UITableViewDataSource
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//		return self.dataList.count
-		return 10
+		return self.dataList.count
 	}
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell : HJMomentTableViewCell = tableView.dequeueReusableCell(withIdentifier: HJClassName(clazz: HJMomentTableViewCell.classForCoder())) as! HJMomentTableViewCell
-		cell.model = HJMomentModel.init(dic: Dictionary.init())
+		
+		let asset : PHAsset = self.dataList.object(at: indexPath.row)
+		let imageManager = PHCachingImageManager.init()
+		let model = HJMomentModel.init()
+		model.date = asset.creationDate
+//		model.title = asset.location
+		imageManager.requestImage(for: asset, targetSize: CGSize.init(width: 500, height: 500), contentMode: PHImageContentMode.default, options: nil) { (image: UIImage?, info: [AnyHashable : Any]?) in
+			model.image = image
+		}
+		cell.model = model
 		return cell
 		
 	}
 	//MARK: - UITableViewDelegate
 	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		let height = HJWidth() * 2.0 / 5.0
+		let height = HJWidth() * 3.0 / 5.0
 		
 		return height
 	}
