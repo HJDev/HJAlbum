@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import Photos
 
 class HJMomentModel: NSObject {
-	/** 图片地址 */
-	var imageUrl : String?
 	/** 图片 */
-	var image : UIImage?
+	var image: UIImage?
 	/** 标题 */
-	var title : String?
+	var title: String?
 	/** 日期 */
-	var date : Date?
+	var date: Date?
+	var dateStr: String?
+	/** asset */
+	var asset: PHAsset?
 	
 	override init() {
-		
+		super.init()
 	}
 	init(dic : [String : AnyObject]) {
 		super.init()

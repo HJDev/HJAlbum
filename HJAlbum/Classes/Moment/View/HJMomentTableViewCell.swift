@@ -18,12 +18,12 @@ class HJMomentTableViewCell: UITableViewCell {
 			self.iModel = newValue
 			self.imageView.image = newValue?.image
 			self.locationLabel.text = newValue?.title
-			let dateFormate : DateFormatter = DateFormatter.init()
-			dateFormate.dateFormat = "yyyy-MM-dd"
-			dateFormate.timeZone = TimeZone.init(identifier: "UTF")
-			dateFormate.locale = Locale.init(identifier: "zh_CN")
-			let dateStr = dateFormate.string(from: (newValue?.date)!)
-			self.dateLabel.text = dateStr
+//			let dateFormate : DateFormatter = DateFormatter.init()
+//			dateFormate.dateFormat = "yyyy-MM-dd"
+//			dateFormate.timeZone = TimeZone.init(identifier: "UTF")
+//			dateFormate.locale = Locale.init(identifier: "zh_CN")
+//			let dateStr = dateFormate.string(from: (newValue?.date)!)
+			self.dateLabel.text = newValue?.dateStr
 		}
 		get {
 			return self.model

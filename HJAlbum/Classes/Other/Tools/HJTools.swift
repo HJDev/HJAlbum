@@ -22,14 +22,14 @@ func getAllPic() -> PHFetchResult<PHAsset> {
 	fetchOption.predicate = NSPredicate.init(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
 	
 	let fetchResults : PHFetchResult<PHAsset> = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: fetchOption)
-	let imageManager = PHCachingImageManager.init()
-	var images : PHFetchResult<PHAsset>?
-	
-	fetchResults.enumerateObjects { (asset : PHAsset, index : Int, ump : UnsafeMutablePointer<ObjCBool>) in
-		imageManager.requestImage(for: asset, targetSize: CGSize.init(width: 50, height: 50), contentMode: PHImageContentMode.aspectFill, options: nil, resultHandler: { (image:UIImage?, info:[AnyHashable : Any]?) in
-			HJLog(message: info)
-		})
-	}
+//	let imageManager = PHCachingImageManager.init()
+//	var images : PHFetchResult<PHAsset>?
+//
+//	fetchResults.enumerateObjects { (asset : PHAsset, index : Int, ump : UnsafeMutablePointer<ObjCBool>) in
+//		imageManager.requestImage(for: asset, targetSize: CGSize.init(width: 50, height: 50), contentMode: PHImageContentMode.aspectFill, options: nil, resultHandler: { (image:UIImage?, info:[AnyHashable : Any]?) in
+//			HJLog(message: info)
+//		})
+//	}
 	
 	return fetchResults
 	

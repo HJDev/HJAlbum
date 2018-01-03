@@ -12,7 +12,7 @@ import CoreLocation
 
 class HJMomentViewController: UITableViewController {
 
-	private lazy var dataList : PHFetchResult<PHAsset> = PHFetchResult<PHAsset>.init()
+	private var dataList: Array<Array<HJMomentModel>> = Array<Array<HJMomentModel>>.init()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,14 @@ class HJMomentViewController: UITableViewController {
 		self.tableView.dataSource = self
 		self.tableView.register(HJMomentTableViewCell.classForCoder(), forCellReuseIdentifier: HJClassName(clazz: HJMomentTableViewCell.classForCoder()))
 		
-		self.dataList = getAllPic()
+		let queue: DispatchQueue = DispatchQueue.init(label: "manageOriginalData")
+		queue.async {
+			self.dataList = self.manageOriginalData(fetchResult: getAllPic())
+			let mainQueue: DispatchQueue = DispatchQueue.main
+			mainQueue.async {
+				self.tableView.reloadData()
+			}
+		}
 		
     }
 	
@@ -43,13 +50,15 @@ class HJMomentViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell : HJMomentTableViewCell = tableView.dequeueReusableCell(withIdentifier: HJClassName(clazz: HJMomentTableViewCell.classForCoder())) as! HJMomentTableViewCell
 		
-		let asset : PHAsset = self.dataList.object(at: indexPath.row)
+		let array:Array<HJMomentModel> = self.dataList[indexPath.row]
 		let imageManager = PHCachingImageManager.init()
 		let model = HJMomentModel.init()
-		model.date = asset.creationDate
-//		model.title = asset.location
-		imageManager.requestImage(for: asset, targetSize: CGSize.init(width: 500, height: 500), contentMode: PHImageContentMode.default, options: nil) { (image: UIImage?, info: [AnyHashable : Any]?) in
-			model.image = image
+		model.date = array.first?.date
+		model.title = array.first?.title
+		if array.first?.asset != nil {
+			imageManager.requestImage(for: (array.first?.asset)!, targetSize: CGSize.init(width: 500, height: 500), contentMode: PHImageContentMode.default, options: nil) { (image: UIImage?, info: [AnyHashable : Any]?) in
+				model.image = image
+			}
 		}
 		cell.model = model
 		return cell
@@ -60,6 +69,40 @@ class HJMomentViewController: UITableViewController {
 		let height = HJWidth() * 3.0 / 5.0
 		
 		return height
+	}
+	
+	//MARK: - manage original data
+	func manageOriginalData(fetchResult: PHFetchResult<PHAsset>) -> Array<Array<HJMomentModel>> {
+		var dataList: Array<Array<HJMomentModel>> = Array<Array<HJMomentModel>>.init()
+		var dataArray: Array<HJMomentModel>? = Array<HJMomentModel>.init()
+		var lastDateStr: String?
+		fetchResult.enumerateObjects { (asset: PHAsset, index: Int, ump: UnsafeMutablePointer<ObjCBool>) in
+			let dateFormatter: DateFormatter = DateFormatter.init()
+			dateFormatter.dateFormat = "yyyy-MM-dd"
+			let dateStr: String = dateFormatter.string(from: asset.creationDate!)
+			
+			let model: HJMomentModel = HJMomentModel.init()
+			model.date = asset.creationDate
+			model.dateStr = dateStr
+			model.asset = asset
+			model.title = nil
+			if lastDateStr == dateStr || lastDateStr == nil {
+				dataArray?.append(model)
+				lastDateStr = dateStr
+			} else {
+				dataList.append(dataArray!)
+				dataArray = Array<HJMomentModel>.init()
+				dataArray?.append(model)
+				lastDateStr = nil
+			}
+			if index == fetchResult.count - 1 {
+				dataList.append(dataArray!)
+				dataArray = nil
+				lastDateStr = nil
+			}
+		}
+		return dataList
+		
 	}
 
 }
